@@ -1,8 +1,8 @@
 C:
 
-cd C:\Users\AnthonyDas\Documents\Visual Studio 2017\Projects\MandS_Wooden_Cube_Puzzle\MandS_Wooden_Cube_Puzzle
+cd C:\Users\AnthonyDas\Documents\GitHub\MandS_Wooden_Cube_Puzzle\MandS_Wooden_Cube_Puzzle\
 
-g++ -Wall -Wconversion -std=c++11 -mtune=native -O3 CubeSolver.cpp -o CubeSolver.exe
+g++ -Wall -Wconversion -g -mtune=native -O3 -I"C:\Users\AnthonyDas\Documents\GitHub\MandS_Wooden_Cube_Puzzle\MandS_Wooden_Cube_Puzzle\Header" -I"C:\Users\AnthonyDas\Documents\GitHub\MandS_Wooden_Cube_Puzzle\MandS_Wooden_Cube_Puzzle\Source" main.cpp cubeSolver.cpp wrappedPiece.cpp piece.cpp element.cpp -o main.exe
 
 
 pause

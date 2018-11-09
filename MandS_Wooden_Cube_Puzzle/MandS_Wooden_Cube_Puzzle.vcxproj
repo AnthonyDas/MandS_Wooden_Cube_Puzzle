@@ -18,6 +18,19 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cubeSolver.cpp" />
+    <ClCompile Include="element.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="piece.cpp" />
+    <ClCompile Include="wrappedPiece.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header\cubeSolver.h" />
+    <ClInclude Include="Header\element.h" />
+    <ClInclude Include="Header\piece.h" />
+    <ClInclude Include="Header\wrappedPiece.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{BC25E666-C1FF-4A7B-A7FF-D1D352E7F5E7}</ProjectGuid>
@@ -69,7 +82,9 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Users\AnthonyDas\Documents\GitHub\MandS_Wooden_Cube_Puzzle\MandS_Wooden_Cube_Puzzle\Header;$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -114,9 +129,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="CubeSolver.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
