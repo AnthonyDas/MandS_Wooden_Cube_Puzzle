@@ -2,8 +2,9 @@
 
 Compile using g++:
 
-cd C:\...\CubeSolver\CubeSolver
-g++ -Wall -O3 CubeSolver.cpp -o CubeSolver.exe
+g++ -Wall -Wconversion -g -mtune=native -O3
+-I" .\MandS_Wooden_Cube_Puzzle\MandS_Wooden_Cube_Puzzle\Header"
+main.cpp cubeSolver.cpp wrappedPiece.cpp piece.cpp element.cpp -o main.exe
 */
 
 #include <iostream>
